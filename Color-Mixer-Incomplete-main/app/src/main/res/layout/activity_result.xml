@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/context_view"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/success"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgResult"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_success"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgResult"
+            android:layout_centerHorizontal="true"
+            android:text="SUCCESS"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Congratulation NAME_HERE !"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Your answer is correct !"
+            android:layout_below="@id/txtName"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+        <Button
+            android:id="@+id/btnQuit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:backgroundTint="@color/success"
+            android:text="QUIT"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>
